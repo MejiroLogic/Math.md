@@ -1,0 +1,17 @@
+html,body {
+    height : 100%;
+}
+#input   {
+    width  : 49.5%;
+    height : 90%;
+    float  : left;
+    font-size: 1.3rem;
+}
+#preview {
+    width    : 49.5%;
+    height   : 90%;
+    float    : right;
+    overflow : auto;
+    border   : solid 1px;
+    border-radius : 0.7%;
+}
