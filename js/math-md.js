@@ -7,7 +7,7 @@ MathJax.Hub.Config({
 MathJax.Hub.Configured();
 $(function () {
     function makePreview() {
-	input = $('#input').val();
+	input = $('#body').val();
 	$('#preview').html(input);
 	$('#preview').html(function (i,v) {
 	    return v.replace(/\$([^_]+)_(.+)\$/g,"$$$1\\_$2$$")
@@ -18,5 +18,5 @@ $(function () {
 	    MathJax.Hub.Queue(["Typeset",MathJax.Hub,"preview"]);
 	},150);
     }
-    $('#input').on('keyup',function(){makePreview();});
+    $('form').on('keyup',function(){makePreview();});
 });
