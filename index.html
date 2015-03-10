@@ -3,84 +3,24 @@
   <head>
     <meta charset="UTF-8"/>
     <title>Math.md</title>
-    <script src="bower_components/MathJax/MathJax.js?config=TeX-AMS-MML_SVG&delayStartupUntil=configured"></script>
-    <script src="bower_components/jQuery/dist/jquery.js"></script>
-    <script src="js/marked.js"></script>
-    <script src="js/work.js"></script>
-   <link href="bower_components/pure/pure.css" rel="stylesheet"/>
-    <link href="bower_components/pure/grids-responsive.css" rel="stylesheet"/>
-    <style>
-      html{height:100%;}
-      body{
-        box-sizing:border-box;
-        height:calc(100% - 25px);
-      }
-      body>div.pure-g{
-        box-sizing:border-box;
-        height:calc(100% - 3em);
-      }
-      body>div.pure-g>div,
-      form,form>div.pure-g{
-        box-sizing:border-box;
-        height:100%;
-      }
-      form div.sub.editor{
-        box-sizing:border-box;
-        margin:0.5em;
-        height:3em;
-      }
-      h1 {
-        margin:0.5em;
-      }
-      input{width:100%;}
-      textarea{width:100%;}
-    </style>
+    <script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_SVG&delayStartupUntil=configured"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/marked/0.3.2/marked.min.js"></script>
+    <script src="js/math-md.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/style.css"/>
   </head>
   <body>
-    <h1 id="logo">Math.md</h1>
-    <div class="pure-g">
-      <div class="pure-u-md-1-6 pure-hidden-sm pure-hidden-md"></div>
-
-      <!--EDITOR-->
-      <div class="pure-u-1 pure-u-md-1-2 pure-u-lg-1-3">
-	<form name="input" class="pure-form">
-	  <div class="pure-g">
-
-	    <!--SUB EDITOR-->
-	    <div class="pure-u-1 editor sub">
-  	      <input name="title" type="text" placeholder="title">
-	    </div>
-	    <div class="pure-u-1-2 editor sub">
-  	      <input name="author" type="text" placeholder="author">
-	    </div>
-	    <div class="pure-u-1-2 editor sub">
-  	      <input name="date" type="text" placeholder="date">
-	    </div>
-	    <!--END SUB EDITOR-->
-
-	    <!--MAIN EDITOR-->
-	    <div class="pure-u-1 editor main">
-  	      <textarea name="body" type="text" wrap="off"></textarea>
-	    </div>
-	    <!--END MAIN EDITOR-->
-
-	    <!--SAVE BUTTON-->
-	    <div class="pure-u-1 pure-hidden-sm button save ">
-	      <a id="dl_html" class="pure-button" href="#">Save</a>
-	    </div>
-	    <!--END SAVE BUTTON-->
-	  </div>
-	</form>
-      </div>
-      <!--END EDITOR-->
-
-      <!--PREVIEW-->
-      <div class="pure-u-1 pure-u-md-1-2 pure-u-lg-1-3">
-	<div id="preview">hoge</div>
-      </div>
-      <!--END PREVIEW-->
-      <div class="pure-u-md-1-6 pure-hidden-sm pure-hidden-md"></div>
-
+    <div id="bar">
+      <h1>Math.md</h1>
+      <a id="save">Download</a>
     </div>
+    <form name="input">
+      <input name="title" type="text" placeholder="title">
+      <div>
+        <input name="author" type="text" placeholder="author">
+        <input name="date" type="text" placeholder="date">
+      </div>
+      <textarea name="body" type="text" wrap="off"></textarea>
+    </form>
+    <div id="preview"></div>
   </body>
 </html>

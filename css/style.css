@@ -1,0 +1,143 @@
+body {
+  width: 100%;
+  *zoom: 1;
+}
+body:before,
+body:after {
+  content: "";
+  display: table;
+}
+body:after {
+  clear: both;
+}
+* {
+  box-sizing: border-box;
+}
+html,
+body {
+  margin: 0px;
+  height: 100%;
+  background-color: Gray;
+  min-width: 20em;
+}
+#bar {
+  height: 3rem;
+  margin: 0;
+  padding: 0.3em;
+  background-color: #336699;
+}
+#bar h1 {
+  display: block;
+  float: left;
+  margin: 0;
+  color: white;
+}
+#bar a {
+  display: block;
+  float: right;
+  width: 6em;
+  font-size: 1.7em;
+  font-weight: bold;
+  text-decoration: none;
+  color: white;
+  text-align: center;
+}
+form {
+  display: inline;
+  float: left;
+  width: 31.25%;
+  margin: 0 1.04166667%;
+  width: 50%;
+  margin: 0;
+  padding: 0;
+  height: calc(100% - 3rem);
+  font-size: 1.5em;
+}
+form input {
+  width: 100%;
+  height: 2.5em;
+  margin: 0;
+  padding: 0.25em;
+  border-style: solid;
+  border-width: 1px;
+  border-color: Gray;
+}
+form div {
+  display: block;
+  width: 104.16666667%;
+  margin: 0 -2.08333333%;
+  *zoom: 1;
+  margin: 0;
+  width: 100%;
+}
+form div:before,
+form div:after {
+  content: "";
+  display: table;
+}
+form div:after {
+  clear: both;
+}
+form div input[name="date"],
+form div input[name="author"] {
+  display: inline;
+  float: left;
+  width: 45.83333333%;
+  margin: 0 2.08333333%;
+  padding: 0.25em;
+  margin: 0;
+  width: 50%;
+}
+form textarea {
+  overflow: auto;
+  width: 100%;
+  margin: 0;
+  height: calc(100% - 4em - 5px);
+  border-style: solid;
+  border-width: 1px;
+  border-color: Gray;
+}
+#preview {
+  display: inline;
+  float: left;
+  width: 47.91666667%;
+  margin: 0 1.04166667%;
+  overflow-y: auto;
+  width: 50%;
+  margin: 0;
+  padding: 1em;
+  height: calc(100% - 3em - 1px);
+  background-color: white;
+  border-style: solid;
+  border-width: 2px 1px 1px 1px;
+  border-color: Gray;
+  word-wrap: break-word;
+  word-break: normal;
+}
+#preview table {
+  border-collapse: collapse;
+}
+#preview table th {
+  border-style: solid;
+  border-width: 1px;
+  border-color: Gray;
+}
+#preview table td {
+  border-style: solid;
+  border-width: 1px;
+  border-color: Gray;
+}
+#preview #title {
+  text-align: center;
+  padding: auto auto;
+}
+#preview #author,
+#preview #date {
+  font-size: 1.2em;
+  text-align: right;
+  text-decoration: underline;
+}
+#preview blockquote {
+  overflow: auto;
+  background-color: #EEEEEE;
+}

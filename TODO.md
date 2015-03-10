@@ -1,4 +1,0 @@
-- jsPDF support
-- Markdown + MathJax Document
-- README.md
-- bootstrap design
